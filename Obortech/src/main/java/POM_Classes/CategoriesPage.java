@@ -52,4 +52,10 @@ public WebDriver driver;
         return stationCategory;
     } 
 
+    @FindBy(id = "stationCategory1")
+    private WebElement stationCategory1;
+    
+    public WebElement getstationCategory1() {
+        return stationCategory1;
+    } 
 }
