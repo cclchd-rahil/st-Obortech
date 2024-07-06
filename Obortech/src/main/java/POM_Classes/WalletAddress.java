@@ -8,8 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 public class WalletAddress {
 	
 public WebDriver driver;
-
-//hi hello wallet address
     
     public WalletAddress(WebDriver driver) {
         this.driver = driver;
