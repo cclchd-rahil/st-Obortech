@@ -7,9 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CategoriesPage {
 	
-	
-	//Hellow Meow Meow
-	
 public WebDriver driver;
     
     public CategoriesPage(WebDriver driver) {
@@ -52,10 +49,4 @@ public WebDriver driver;
         return stationCategory;
     } 
 
-    @FindBy(id = "stationCategory1")
-    private WebElement stationCategory1;
-    
-    public WebElement getstationCategory1() {
-        return stationCategory1;
-    } 
 }
