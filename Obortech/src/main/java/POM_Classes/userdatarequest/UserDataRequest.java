@@ -1,4 +1,4 @@
-package POM_Classes;
+package POM_Classes.userdatarequest;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

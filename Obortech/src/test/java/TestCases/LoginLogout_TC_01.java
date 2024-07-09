@@ -1,11 +1,12 @@
 package TestCases;
 
-import POM_Classes.dropdown.LoginLogoutPage;
-import POM_Classes.dropdown.UserDropdown;
 import Utilities.BaseClass;
 import Utilities.DataUtility;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import POM_Classes.UserDropdown;
+import POM_Classes.loginlogout.LoginLogoutPage;
 
 public class LoginLogout_TC_01 extends BaseClass {
     private LoginLogoutPage loginLogoutPage;
