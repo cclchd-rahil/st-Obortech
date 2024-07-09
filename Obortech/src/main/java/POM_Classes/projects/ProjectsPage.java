@@ -1,4 +1,4 @@
-package POM_Classes;
+package POM_Classes.projects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

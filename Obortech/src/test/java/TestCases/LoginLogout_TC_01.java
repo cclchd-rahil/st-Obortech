@@ -1,7 +1,7 @@
 package TestCases;
 
-import POM_Classes.LoginLogoutPage;
-import POM_Classes.UserDropdown;
+import POM_Classes.dropdown.LoginLogoutPage;
+import POM_Classes.dropdown.UserDropdown;
 import Utilities.BaseClass;
 import Utilities.DataUtility;
 import org.testng.annotations.BeforeClass;
