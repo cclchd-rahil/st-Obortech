@@ -1,15 +1,15 @@
-package POM_Classes;
+package POM_Classes.commonlyused;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CommonButtons {
+public class Buttons {
 
 	public WebDriver driver;
 
-	public CommonButtons(WebDriver driver) {
+	public Buttons(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
