@@ -55,20 +55,11 @@ public void launchBrowser() throws Throwable
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 }
 
-public void setUp() throws Throwable {
-	// TODO Auto-generated method stub
-	
-}
+@AfterClass
+    public void tearDown() {
+        if (driver != null) {
+        driver.quit(); 
+    }
 
-//   @BeforeMethod
-//public void Loginfunction() {
-//   LoginPage lp=new LoginPage(driver);
-//   
-//   
-//}
-//   
-//   @AfterMethod
-//   public void Logoutfunction() {
-//	   LoginPage lp=new LoginPage(driver);
 	   
-   }
+}}

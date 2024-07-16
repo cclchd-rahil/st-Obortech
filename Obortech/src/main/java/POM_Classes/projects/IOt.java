@@ -15,10 +15,10 @@ public WebDriver driver;
     }
     
     @FindBy(xpath = "//body/div[@id='__next']/div[@id='page-top']/div[@id='wrapper']/div[@id='content-wrapper']/div[@id='content']/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/*[1]")
-    private WebElement IOTDevices;
+    private WebElement IoTDevices;
     
     public WebElement getiotdevices() {
-    	return IotDevices;
+    	return IoTDevices;
     }
     
     @FindBy(xpath = "//body/div[@id='__next']/div[@id='page-top']/div[@id='wrapper']/div[@id='content-wrapper']/div[@id='content']/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/*[1]")

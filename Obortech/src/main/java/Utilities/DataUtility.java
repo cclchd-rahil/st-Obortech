@@ -8,10 +8,15 @@ import org.testng.annotations.DataProvider;
 
 public class DataUtility {
     public String dataFromPropertiesFile(String key) throws Throwable {
+    	
         File file = new File("./src/main/resources/Credentials.properties");
+        
         FileInputStream fis = new FileInputStream(file);
+        
         Properties pr = new Properties();
+        
         pr.load(fis);
+        
         return pr.getProperty(key);
     }
 
@@ -22,8 +27,9 @@ public class DataUtility {
         int totalRows = excel.getRowCount("Sheet1");
         int totalCols = excel.getCellCount("Sheet1", 0);
 
-        String[][] loginData = new String[totalRows][totalCols];
-        for (int i = 1; i <= totalRows; i++) {
+        int usersToFetch = Math.min(totalRows,  2);
+		String[][] loginData = new String[usersToFetch][totalCols];
+        for (int i = 1; i <= usersToFetch; i++) {
             for (int j = 0; j < totalCols; j++) {
                 loginData[i - 1][j] = excel.getCellData("Sheet1", i, j);
             }

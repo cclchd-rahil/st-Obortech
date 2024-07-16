@@ -8,11 +8,4 @@ public class language {
 	
 public WebDriver driver;
     
-    public language(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
-    
-    @FindBy
-
 }
